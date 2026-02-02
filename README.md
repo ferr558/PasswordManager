@@ -36,10 +36,7 @@ Il progetto è modulare per garantire massima sicurezza e facilità di manutenzi
 
 Per eseguire o compilare il progetto, è necessario **Python 3.12+** (consigliata 3.12 per massima stabilità con PyInstaller).
 
-### Librerie necessarie:
-Installa tutte le dipendenze con un unico comando:
-
-pip install streamlit fastapi uvicorn sqlalchemy cryptography requests pyinstaller
+ pip install streamlit fastapi uvicorn sqlalchemy cryptography requests pyinstaller
 
 
 ## 📦 Come Creare l'Eseguibile (.exe)
@@ -49,6 +46,7 @@ Per generare il file unico pronto all'uso, segui questi passaggi:
 1. **Prepara l'icona:** Assicurati di avere il file dell'icona (`icona.ico`) nella cartella principale del progetto.
 2. **Esegui lo script di compilazione:**
    ```bash
+   pip install streamlit fastapi uvicorn sqlalchemy cryptography requests pyinstaller
    python builder.py
 
 ---
