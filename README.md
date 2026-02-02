@@ -40,3 +40,25 @@ Per eseguire o compilare il progetto, è necessario **Python 3.12+** (consigliat
 Installa tutte le dipendenze con un unico comando:
 ```bash
 pip install streamlit fastapi uvicorn sqlalchemy cryptography requests pyinstaller
+
+---
+
+## 📦 Come Creare l'Eseguibile (.exe)
+
+Per generare il file unico pronto all'uso, segui questi passaggi:
+
+1. **Prepara l'icona:** Assicurati di avere il file dell'icona (`icona.ico`) nella cartella principale del progetto.
+2. **Esegui lo script di compilazione:**
+   ```bash
+   python builder.py
+
+---
+
+## 🔒 Note sulla Sicurezza
+
+* **Master Password:** Viene salvata esclusivamente come hash salato tramite l'algoritmo **PBKDF2**. Se la password viene smarrita, i dati salvati non potranno essere recuperati in alcun modo, poiché la chiave di decrittazione deriva direttamente da essa.
+* **Isolamento Localhost:** Il backend FastAPI è configurato per restare in ascolto solo sull'indirizzo di loopback `127.0.0.1`. Questo garantisce che il servizio sia inaccessibile da altri dispositivi nella stessa rete locale (LAN).
+* **Privacy Totale:** L'applicazione è rigorosamente offline. Nessun dato, statistica o credenziale viene inviato a server esterni. Il database SQLite rimane confinato esclusivamente sul tuo disco locale.
+
+---
+Generato con ❤️ per una gestione sicura delle credenziali.
