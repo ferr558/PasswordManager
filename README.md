@@ -38,10 +38,9 @@ Per eseguire o compilare il progetto, è necessario **Python 3.12+** (consigliat
 
 ### Librerie necessarie:
 Installa tutte le dipendenze con un unico comando:
-```bash
+
 pip install streamlit fastapi uvicorn sqlalchemy cryptography requests pyinstaller
 
----
 
 ## 📦 Come Creare l'Eseguibile (.exe)
 
