@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#ff4500" # Arancione per i bottoni
+backgroundColor = "#0e1117" # Nero/Grigio scurissimo
+secondaryBackgroundColor = "#262730" # Colore per le caselle di input
+textColor = "#ffffff" # Testo bianco
+font = "sans serif"
